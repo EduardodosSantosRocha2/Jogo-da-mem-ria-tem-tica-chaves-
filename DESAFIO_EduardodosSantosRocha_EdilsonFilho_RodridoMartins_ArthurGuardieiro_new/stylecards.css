@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./img/vila-do-chaves-capa-01.jpg");    
+    font-family: 'Zen Dots', cursive;
+}
+
+
+#con{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 90%;
+}
+
+.carta{
+    height:  25vh; 
+    width: 100%;
+    transition: all 700ms ease;
+    transform-style:preserve-3d ;
+    background-color: black;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Frente{
+    background-size: cover;
+    background-position: center;
+    transform: rotatey(180deg);
+}
+
+.Verso{
+    background-image: url("./img/logo.png") ;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+}
+
+.click{
+    transform: rotatey(180deg);
+}
+
+#segura{
+    margin-top: 10px;
+    height: 43vh;
+    width: 50%;
+    background-image: linear-gradient(to right top, #15ff0062, #00f0a863, #00d9ff7c, #00b5ff, #0088ff67, #1b71ff, #5451ff98, #8400f757, #ad00f154, #cc00eb49, #e700e33d, #ff00dd5b);
+    border-radius: 10%;
+}
+
+.obj{
+    margin-top: 2rem;
+    height: 20vh;
+    text-align: center;
+    color: white;
+
+}
+
+.pont{
+    height: auto;
+    text-align: center;
+    color: white;
+    margin-top: 10px;  
+}
+
+ul{
+    margin: 20px;
+    list-style: none;
+}
+
+ul li{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+div > button{
+    margin-top: 25px;
+    width: 120px;
+    height: 60px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #15ff0062, #00f0a863, #00d9ff7c, #00b5ff, #0088ff67, #1b71ff, #5451ff98, #8400f757, #ad00f154, #cc00eb49, #e700e33d, #ff00dd5b);
+    transition: .6s;
+    color: white;
+    font-size: 18px;
+    border-radius: 10%;
+} 
+
+h2{
+    margin: 10px;
+}
+
+button:hover{
+    background-color: red;
+    font-size: 20px;
+    width: 140px;
+    height: 70px;
+}
+
+.face, .verso, .carta{
+    cursor: pointer;
+    border-radius: 10%;
+    transition: 0.6s;
+}
+
+.face:hover, .verso:hover, .carta:hover{
+    box-shadow: 0 0 5px 5px deeppink;
+}
+
+.vitoria{
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+.vitoria h1{
+    color:white;
+}
